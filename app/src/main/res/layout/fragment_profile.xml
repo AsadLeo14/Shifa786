@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.profile.ProfileFragment">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="@dimen/_90sdp"
+          android:layout_height="@dimen/_90sdp"
+          android:layout_marginTop="@dimen/_40sdp"
+          android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:text="Ayesha Umar"
+            android:textSize="@dimen/_14ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Date Of Birth"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:text="07 - 12 - 1995"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+        <TextView
+            android:text="Email"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:text="ayesha@gmail.com"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+        <TextView
+            android:text="Phone Number"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:text="+1 123 123 1234"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+        <TextView
+            android:text="Gender"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:text="Female"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</layout>

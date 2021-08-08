@@ -24,3 +24,9 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext{
+    navVersion = "2.3.5"
+    sdpVersion = "1.0.6"
+    circleImageViewVersion = "3.1.0"
+}
