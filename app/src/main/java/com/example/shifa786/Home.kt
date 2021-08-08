@@ -29,7 +29,6 @@ class Home : AppCompatActivity() {
         setContentView(binding.root)
         binding.lifecycleOwner = this
         setSupportActionBar(binding.toolBar)
-
         binding.viewModel = homeViewModel
 
         val navView: BottomNavigationView = binding.navView
@@ -47,15 +46,16 @@ class Home : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            setUpTitle()
+            setUpTitleAndIcon()
         }
 
 
     }
 
-    private fun setUpTitle() {
+    private fun setUpTitleAndIcon() {
         homeViewModel._title.value = binding.toolBar.title.toString()
         binding.toolBar.title = ""
+        //supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_dashboard_black_24dp)
     }
 
 

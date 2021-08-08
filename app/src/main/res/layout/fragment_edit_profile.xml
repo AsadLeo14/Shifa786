@@ -6,13 +6,147 @@
 
     </data>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingBottom="@dimen/_40sdp"
         tools:context=".ui.profile.EditProfileFragment">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"/>
 
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="First Name"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:hint="Your First Name"
+                android:inputType="text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+            <TextView
+                android:text="Last Name"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:hint="Your Last Name"
+                android:inputType="text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+            <TextView
+                android:text="Date Of Birth"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:hint="Your Date Of Birth"
+                android:inputType="text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+            <TextView
+                android:text="Email"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:hint="Your Email"
+                android:inputType="text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+            <TextView
+                android:text="Phone Number"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:hint="Your Phone Number"
+                android:inputType="phone"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+            <TextView
+                android:text="Gender"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <Button
+                    android:text="Male"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+                <Button
+                    android:text="Female"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
 </layout>

@@ -20,7 +20,9 @@
         <entry key="app/src/main/res/layout/profile_fragment.xml" value="0.3578125" />
         <entry key="app/src/main/res/layout/settings_fragment.xml" value="0.3578125" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3578125" />
+        <entry key="app/src/main/res/menu/menu_edit_profile.xml" value="0.3578125" />
         <entry key="app/src/main/res/menu/menu_home.xml" value="0.3578125" />
+        <entry key="app/src/main/res/menu/menu_profile.xml" value="0.3578125" />
       </map>
     </option>
   </component>

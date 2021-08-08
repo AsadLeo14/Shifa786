@@ -6,6 +6,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.shifa786.BaseFragment
 import com.example.shifa786.R
 import com.example.shifa786.databinding.FragmentProfileBinding
@@ -24,7 +25,6 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.invalidateOptionsMenu()
     }
 
 
@@ -37,7 +37,7 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_edit -> {
-
+                findNavController().navigate(R.id.navigation_edit_profile)
                 return true
             }
         }
